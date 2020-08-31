@@ -1,9 +1,9 @@
 from raven import Client
 
-from app.core.celery_app import celery_app
-from app.core.config import settings
-
-client_sentry = Client(settings.SENTRY_DSN)
+from core.celery_app import celery_app
+# from core.config import settings
+SENTRY_DSN = None
+client_sentry = Client(SENTRY_DSN)
 
 
 @celery_app.task(acks_late=True)
