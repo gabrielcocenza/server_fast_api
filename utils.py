@@ -10,15 +10,15 @@ from core.security import SECRET_KEY
 
 # from core.config import settings
 
-EMAILS_FROM_NAME = ''
-EMAILS_FROM_EMAIL = ''
-SMTP_HOST = ''
-SMTP_PORT = ''
+EMAILS_FROM_NAME = 'foo@gmail.com'
+EMAILS_FROM_EMAIL = 'foo@gmail.com'
+SMTP_HOST = 'smtp.gmail.com'
+SMTP_PORT = '465'
 SMTP_TLS = True
-SMTP_USER = ''
-SMTP_PASSWORD = ''
-PROJECT_NAME = 't10 api'
-EMAIL_TEMPLATES_DIR = "/email-templates/build"
+SMTP_USER = 'foo@gmail.com'
+SMTP_PASSWORD = 'password'
+PROJECT_NAME = 'api'
+EMAIL_TEMPLATES_DIR = "./email-templates/build"
 SERVER_HOST = ''
 EMAIL_RESET_TOKEN_EXPIRE_HOURS = 1
 
@@ -29,7 +29,7 @@ def send_email(
     html_template: str = "",
     environment: Dict[str, Any] = {},
 ) -> None:
-    assert False, "no provided configuration for email variables"
+    # assert False, "no provided configuration for email variables"
     message = emails.Message(
         subject=JinjaTemplate(subject_template),
         html=JinjaTemplate(html_template),

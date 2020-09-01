@@ -12,7 +12,8 @@ from core import security
 from db.session import SessionLocal 
 
 reusable_oauth2 = OAuth2PasswordBearer(
-    tokenUrl= "/login/access-token"
+    tokenUrl= "/login/access-token",
+    scopes={"ExternalApp": "external app from customer"}
 )
 
 
