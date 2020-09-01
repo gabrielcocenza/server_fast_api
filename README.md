@@ -39,9 +39,9 @@ By this point you should have three running terminals running the app, celery an
 ![API docs](img/terminal.png)
 
 ## Using the application:
-* All the documentation of the api can be acessed from `localhost:8000/docs`. From there you can navigate in the FastAPI Swagger UI
+* All the documentation of the api can be accessed from `localhost:8000/docs`. From there you can navigate in the FastAPI Swagger UI
 ![API docs](img/fastapi.png)
-* First of all you need to Authorize. Click into the Authorize button and acess with user: `username: superuser_1@gmail.com` and `password: password` after this you should have a token that gives you acess to test-token, recover password, reset password and etc.
+* First of all you need to Authorize. Click into the Authorize button and access with user: `username: superuser_1@gmail.com` and `password: password` after this you should have a token that gives you acess to test-token, recover password, reset password and etc.
 *During the generation of the token you can choose to have authorization as an ExternalAPP
 ![API docs](img/externalapp.png)
 * Normal users (Customer) doesn't have access of all routes.
@@ -66,7 +66,7 @@ EMAIL_RESET_TOKEN_EXPIRE_HOURS = 1
 * Go to Connection and use Host:postgres Username:user Password:password
 ![API docs](img/postgres.png)
 
-## Acessing Flower monitoring tool:
+## Accessing Flower monitoring tool:
 * Go to `localhost:5555` and login with User Name:user password:test
 ![API docs](img/flower.png)
 
