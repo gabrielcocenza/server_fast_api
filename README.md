@@ -17,12 +17,12 @@ pip install -r requirements.txt
 * Start the application in another terminal with Docker Compose:
 
 ```bash
-docker-compose up -d
+docker-compose up --build
 ```
 
 * Populate the db with a superuser
 ```bash
-chmod +x prestart.sh
+sudo chmod +x prestart.sh
 ./ prestart.sh
 ```
 
